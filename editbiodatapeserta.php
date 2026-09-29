@@ -1,250 +1,62 @@
 <!doctype html>
-<html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Data Peserta</title>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <title>Edit Data Peserta</title>
+</head>
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
+<body class="bg-gray-200">
+  <div style="
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: 800px;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    margin-top: px;
+    background-color: white; "
+    >
+      <div class="m-3">
+        <a href="profile.php"><-Back</a>
 
-  <body class="min-h-screen flex items-center justify-center p-6">
-
-    <!-- Card -->
-    <div class="w-full max-w-xl bg-white rounded-3xl shadow-xl overflow-hidden">
-
-      <!-- Header -->
-      <div class="bg-gradient-to-r from-blue-600 to-cyan-500 px-8 py-7 text-white">
-        <a
-          href="profile.html"
-          class="inline-flex items-center gap-2 text-sm text-green-50 hover:text-white transition mb-5"
-        >
-          ← Kembali ke Profil
-        </a>
-
-        <h1 class="text-2xl md:text-3xl font-bold">
-          Edit Biodata Peserta
-        </h1>
-
-        <p class="text-green-50 text-sm mt-1">
-          Perbarui informasi pribadi Anda di bawah ini.
-        </p>
-      </div>
-
-
-      <!-- Content -->
-      <div class="px-6 py-8 md:px-10">
-
-        <!-- Profile Picture -->
-        <div class="flex flex-col items-center mb-8">
-          <div class="relative">
-            <img
-              src="profile.png"
-              alt="Avatar"
-              class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-lg"
-            />
-
-            <div
-              class="absolute bottom-1 right-1 w-6 h-6 bg-green-500 border-4 border-white rounded-full"
-            ></div>
-          </div>
-
-          <h2 class="mt-3 font-semibold text-gray-800">
-            Jamal Derjeder
-          </h2>
-
-          <p class="text-sm text-gray-500">
-            Data Peserta
-          </p>
-        </div>
-
-
-        <!-- Form -->
-        <form action="" method="POST" class="space-y-5">
-
-          <!-- Nama -->
-          <div>
-            <label
-              for="nama"
-              class="block text-sm font-semibold text-gray-700 mb-2"
-            >
-              Nama Lengkap
-            </label>
-
-            <input
-              type="text"
-              id="nama"
-              name="nama"
-              placeholder="Jamal Derjeder"
-              class="w-full px-4 py-3 rounded-xl border border-gray-300 bg-gray-50
-                     outline-none transition
-                     focus:bg-white focus:border-green-500 focus:ring-4 focus:ring-green-100"
-            />
-          </div>
-
-
-          <!-- Tanggal Lahir -->
-          <div>
-            <label
-              for="ttl"
-              class="block text-sm font-semibold text-gray-700 mb-2"
-            >
-              Tanggal Lahir
-            </label>
-
-            <input
-              type="date"
-              id="ttl"
-              name="ttl"
-              class="w-full px-4 py-3 rounded-xl border border-gray-300 bg-gray-50
-                     outline-none transition
-                     focus:bg-white focus:border-green-500 focus:ring-4 focus:ring-green-100"
-            />
-          </div>
-
-
-          <!-- Asal Instansi -->
-          <div>
-            <label
-              for="asal"
-              class="block text-sm font-semibold text-gray-700 mb-2"
-            >
-              Asal Instansi / Kampus
-            </label>
-
-            <input
-              type="text"
-              id="asal"
-              name="asal"
-              placeholder="Telkom University"
-              class="w-full px-4 py-3 rounded-xl border border-gray-300 bg-gray-50
-                     outline-none transition
-                     focus:bg-white focus:border-green-500 focus:ring-4 focus:ring-green-100"
-            />
-          </div>
-
-
-          <!-- Nomor Telepon -->
-          <div>
-            <label
-              for="number"
-              class="block text-sm font-semibold text-gray-700 mb-2"
-            >
-              Nomor Telepon
-            </label>
-
-            <input
-              type="tel"
-              id="number"
-              name="number"
-              placeholder="089599910002"
-              class="w-full px-4 py-3 rounded-xl border border-gray-300 bg-gray-50
-                     outline-none transition
-                     focus:bg-white focus:border-green-500 focus:ring-4 focus:ring-green-100"
-            />
-          </div>
-
-
-          <!-- Email -->
-          <div>
-            <label
-              for="email"
-              class="block text-sm font-semibold text-gray-700 mb-2"
-            >
-              Email Aktif
-            </label>
-
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Jamal@gmail.com"
-              class="w-full px-4 py-3 rounded-xl border border-gray-300 bg-gray-50
-                     outline-none transition
-                     focus:bg-white focus:border-green-500 focus:ring-4 focus:ring-green-100"
-            />
-          </div>
-
-
-          <!-- Gender -->
-          <div>
-            <p class="block text-sm font-semibold text-gray-700 mb-3">
-              Jenis Kelamin
-            </p>
-
-            <div class="grid grid-cols-2 gap-3">
-
-              <label
-                class="flex items-center gap-3 p-3 rounded-xl border border-gray-300
-                       cursor-pointer hover:border-green-500 hover:bg-green-50 transition"
-              >
-                <input
-                  type="radio"
-                  name="gender"
-                  value="Laki-laki"
-                  checked
-                  class="w-4 h-4 accent-green-600"
-                />
-
-                <span class="text-sm text-gray-700">
-                  Laki-laki
-                </span>
-              </label>
-
-
-              <label
-                class="flex items-center gap-3 p-3 rounded-xl border border-gray-300
-                       cursor-pointer hover:border-green-500 hover:bg-green-50 transition"
-              >
-                <input
-                  type="radio"
-                  name="gender"
-                  value="Perempuan"
-                  class="w-4 h-4 accent-green-600"
-                />
-
-                <span class="text-sm text-gray-700">
-                  Perempuan
-                </span>
-              </label>
-
-            </div>
-          </div>
-
-
-          <!-- Divider -->
-          <div class="border-t border-gray-200 pt-6"></div>
-
-
-          <!-- Buttons -->
-          <div class="flex flex-col-reverse sm:flex-row gap-3">
-
-            <a
-              href="profile.html"
-              class="w-full sm:w-1/2 text-center px-5 py-3 rounded-xl
-                     border border-gray-300 text-gray-700 font-semibold
-                     hover:bg-gray-100 transition"
-            >
-              Batal
-            </a>
-
-            <button
-              type="submit"
-              class="w-full sm:w-1/2 px-5 py-3 rounded-xl
-                     bg-green-600 text-white font-semibold
-                     shadow-md shadow-green-200
-                     hover:bg-green-700 hover:shadow-lg
-                     active:scale-[0.98] transition"
-            >
-              Simpan Perubahan
-            </button>
-
-          </div>
-
-        </form>
-      </div>
+    <h1 class="text-center text-xl mb-2">Edit biodata peserta</h1>
+    <div class="text-center">
+      <img
+        src="profile.png"
+        alt="Avatar"
+        class="rounded-[50%] w-[80px] mx-auto" />
     </div>
 
-  </body>
+    <div style="width: 90%; margin-left: 5%;">
+      <form action="profile.php" method="post">
+        <p>Nama</p>
+        <input type="text" name="nama" class="border-1 w-[420px] h-[30px] rounded-lg mb-2 pl-2" id="" placeholder="Jamal Derjeder" />
+        <p>Tanggal lahir</p>
+        <input type="date" name="ttl" id="" class="border-1 w-[420px] h-[30px] rounded-lg mb-2 pl-2" />
+        <p>Asal Instansi/Kampus</p>
+        <input type="text" name="asal" class="border-1 w-[420px] h-[30px] rounded-lg mb-2 pl-2" id="" placeholder="Telkom University" />
+        <p>Nomor Telepon</p>
+        <input type="number" name="number" id="" class="border-1 w-[420px] h-[30px] rounded-lg mb-2 pl-2" placeholder="089599910002" />
+        <p>Email Aktif</p>
+        <input type="email" name="email" id="" class="border-1 w-[420px] h-[30px] rounded-lg mb-2 pl-2" placeholder="Jamal@gmail.com" />
+        <p>Gender:</p>
+        <input type="radio" name="gender" value="Laki laki" id="" checked />
+        Laki laki
+        <br/>
+        <input type="radio" name="gender" value="Perempuan" id="" />
+        Perempuan
+        <br/>
+        <input
+          type="submit"
+          class="ml-[38%] mt-[20px] w-[100px] h-[35px] rounded-[4px] bg-green-400" />
+      </form>
+    </div>
+  </div>
+  </div>
+</body>
 </html>
