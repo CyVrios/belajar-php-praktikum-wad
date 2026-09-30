@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,11 +30,12 @@
         position: absolute;
         top: 10%;
         left: 35%;
-        margin-top: px;
-        background-color: white;
-      ">
-    <h1 class="text-center text-xl mb-4 mt-8">Biodata Peserta</h1>
-    <div class="text-center">
+        background-color: white;">
+
+    <div class="bg-blue-400 p-3 rounded-t-xl">
+      <h1 class="text-center text-2xl mb-2 mt-4 text-white">Biodata Peserta</h1>
+    </div>
+    <div class="text-center mt-6">
       <img
         src="profile.png"
         alt="Avatar"
@@ -43,11 +45,11 @@
         <table>
           <tr>
             <td>Nama</td>
-            <td><?php echo $_POST["nama"]; ?></td>
+            <td><?php echo $_POST["nama"] ; ?></td>
           </tr>
           <tr>
             <td>Tanggal Lahir</td>
-            <td><?php echo $_POST["ttl"]; ?></td>
+            <td><?php echo $_POST["ttl"] ; ?></td>
           </tr>
           <tr>
             <td>Asal Instansi/Kampus</td>
@@ -68,7 +70,7 @@
         </table>
 
         <a href="editbiodatapeserta.php">
-          <input type="button" value="Edit data" class="mt-10 w-[100px] h-[35px] rounded-s bg-yellow-300 shadow-lg">
+          <input type="button" value="Edit data" class="mt-10 w-[100px] h-[35px] rounded-s bg-yellow-500 shadow-lg text-white">
         </a>
       </div>
     </div>
